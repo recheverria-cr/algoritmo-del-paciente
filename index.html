@@ -35,6 +35,7 @@
   }
   .logo{position:absolute;top:5vh;left:7vw;font-family:var(--sans);font-weight:500;font-size:clamp(20px,2vw,30px);letter-spacing:-0.5px}
   .logo sup{font-size:.45em;font-weight:400;margin-left:1px}
+  .acto{position:absolute;top:5.5vh;right:7vw;font-size:clamp(10px,.85vw,13px);letter-spacing:.22em;text-transform:uppercase;opacity:.4;font-weight:500}
   .kicker{
     font-size:clamp(11px,1vw,14px);letter-spacing:.22em;text-transform:uppercase;
     font-weight:500;margin-bottom:3.5vh;opacity:.85;
@@ -43,234 +44,239 @@
   .bg-blanco .kicker{opacity:.55}
   h1{font-weight:700;font-size:clamp(40px,6.2vw,96px);line-height:1.04;letter-spacing:-0.02em;text-transform:uppercase}
   h1 .tn, h2 .tn{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:lowercase;letter-spacing:0}
-  h2{font-weight:700;font-size:clamp(30px,4.4vw,68px);line-height:1.06;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:4vh}
-  .sub{font-size:clamp(16px,1.55vw,24px);font-weight:300;line-height:1.5;max-width:62ch;margin-top:3.5vh}
+  h2{font-weight:700;font-size:clamp(34px,5.2vw,82px);line-height:1.05;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:3vh}
+  .sub{font-size:clamp(17px,1.75vw,27px);font-weight:300;line-height:1.5;max-width:58ch;margin-top:2.5vh}
   .punch{
-    font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.1vw,32px);
-    line-height:1.35;margin-top:5vh;max-width:56ch;
+    font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.2vw,34px);
+    line-height:1.35;margin-top:4.5vh;max-width:54ch;
   }
   .bg-blanco .punch{border-left:4px solid var(--verde);padding-left:24px}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:4vw;margin-top:1vh}
-  .col h3{font-size:clamp(13px,1.1vw,16px);letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:2.2vh}
-  .col p, .col li{font-size:clamp(15px,1.35vw,21px);font-weight:300;line-height:1.55}
-  .col ul{list-style:none}
-  .col li{padding:1.4vh 0;border-top:1px solid var(--gris-borde)}
-  .col li:last-child{border-bottom:1px solid var(--gris-borde)}
   .chat{
     background:var(--gris);border:1px solid var(--gris-borde);border-radius:18px;
-    padding:3.2vh 2.6vw;max-width:820px;margin-top:1vh;
+    padding:3.2vh 2.6vw;max-width:820px;margin-top:2vh;
   }
-  .chat .q{font-size:clamp(20px,2.3vw,36px);font-weight:500;line-height:1.3}
+  .chat .q{font-size:clamp(20px,2.4vw,38px);font-weight:500;line-height:1.3}
   .chat .cursor{display:inline-block;width:.55em;height:1.1em;background:var(--negro);vertical-align:text-bottom;margin-left:6px;animation:blink 1s steps(1) infinite}
   @keyframes blink{50%{opacity:0}}
   .chat .tag{display:inline-block;background:var(--verde);color:var(--negro);font-size:clamp(10px,.85vw,13px);
     letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:6px 14px;border-radius:100px;margin-bottom:2.2vh}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;margin-top:2vh}
-  .stat{border-top:3px solid var(--verde);padding-top:2.4vh}
-  .stat .n{font-weight:700;font-size:clamp(30px,3.6vw,58px);letter-spacing:-0.02em;line-height:1}
-  .stat .l{font-size:clamp(12px,1.05vw,16px);font-weight:400;line-height:1.45;margin-top:1.4vh;color:#333}
+  .pregunta{display:grid;grid-template-columns:90px 1fr;gap:2.5vw;padding:3.2vh 0;border-top:1px solid var(--gris-borde);align-items:center}
+  .pregunta:last-of-type{border-bottom:1px solid var(--gris-borde)}
+  .pregunta .qn{font-weight:700;font-size:clamp(22px,2.2vw,34px);color:var(--negro)}
+  .pregunta .qt{font-weight:700;font-size:clamp(24px,3.2vw,50px);line-height:1.12;letter-spacing:-0.02em;text-transform:uppercase}
+  .pregunta .qt .tn{font-family:var(--serif);font-style:italic;font-weight:400;text-transform:lowercase;letter-spacing:0}
+  .statline{display:flex;gap:4vw;margin-top:4vh;flex-wrap:wrap}
+  .statline .s{border-top:3px solid var(--verde);padding-top:1.6vh;min-width:150px}
+  .statline .n{font-weight:700;font-size:clamp(24px,2.6vw,42px);letter-spacing:-0.02em;line-height:1}
+  .statline .l{font-size:clamp(11px,.95vw,14px);font-weight:400;line-height:1.4;margin-top:1vh;color:#444;max-width:24ch}
   .lista-num{margin-top:1vh}
-  .lista-num .item{display:grid;grid-template-columns:90px 1fr;gap:2.5vw;padding:1.8vh 0;border-top:1px solid var(--gris-borde);align-items:start}
+  .lista-num .item{display:grid;grid-template-columns:90px 1fr;gap:2.5vw;padding:2.4vh 0;border-top:1px solid var(--gris-borde);align-items:start}
   .lista-num .item:last-child{border-bottom:1px solid var(--gris-borde)}
-  .lista-num .num{font-weight:700;font-size:clamp(22px,2.2vw,34px);color:var(--negro)}
-  .lista-num .num span{color:var(--verde);-webkit-text-stroke:1px var(--negro)}
-  .lista-num h4{font-size:clamp(16px,1.5vw,23px);font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:.8vh}
-  .lista-num p{font-size:clamp(14px,1.3vw,20px);font-weight:300;line-height:1.5;max-width:70ch}
-  .compact{padding-top:13vh;justify-content:flex-start}
-  .compact .kicker{margin-bottom:1.6vh}
-  .compact h2{font-size:clamp(26px,3.3vw,50px);margin-bottom:1.5vh}
-  .compact .punch{margin-top:2.2vh;font-size:clamp(16px,1.65vw,25px)}
-  .compact .lista-num h4{font-size:clamp(15px,1.35vw,20px)}
-  .compact .lista-num p{font-size:clamp(13px,1.15vw,17px)}
-  .compact .lista-num .num{font-size:clamp(19px,1.9vw,28px)}
+  .lista-num .num{font-weight:700;font-size:clamp(22px,2.2vw,34px)}
+  .lista-num h4{font-size:clamp(17px,1.6vw,25px);font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:.8vh}
+  .lista-num p{font-size:clamp(14px,1.35vw,21px);font-weight:300;line-height:1.5;max-width:64ch}
   .firma{margin-top:6vh;font-size:clamp(13px,1.15vw,17px);font-weight:400;opacity:.8;line-height:1.6}
   .contacto{margin-top:5vh;font-size:clamp(16px,1.5vw,23px);font-weight:400;line-height:1.9}
   .contacto strong{font-weight:700}
   .nav-hint{position:absolute;bottom:4vh;left:7vw;font-size:12px;letter-spacing:.15em;text-transform:uppercase;opacity:.35}
   .counter{position:absolute;bottom:4vh;right:7vw;font-size:13px;letter-spacing:.1em;opacity:.45;font-variant-numeric:tabular-nums}
-  .flecha{display:flex;align-items:center;gap:2.5vw;margin:3vh 0}
-  .flecha .box{border:1px solid currentColor;padding:2.4vh 2vw;flex:1}
-  .flecha .box h3{font-size:clamp(12px,1vw,15px);letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:1.6vh}
-  .flecha .box p{font-size:clamp(14px,1.3vw,20px);font-weight:300;line-height:1.55}
-  .flecha .ar{font-size:clamp(24px,2.6vw,42px);font-weight:300}
-  .box-destacado{background:var(--negro);color:var(--blanco)}
   @media (max-width:820px){
-    .cols{grid-template-columns:1fr;gap:3vh}
-    .stats{grid-template-columns:repeat(2,1fr);gap:3vh 5vw}
-    .lista-num .item{grid-template-columns:52px 1fr;gap:4vw}
     .slide{padding:10vh 7vw 8vh}
-    .flecha{flex-direction:column;align-items:stretch;gap:1.5vh}
-    .flecha .ar{transform:rotate(90deg);text-align:center}
+    .statline{gap:3vh 8vw}
+    .lista-num .item{grid-template-columns:52px 1fr;gap:4vw}
   }
 </style>
 </head>
 <body>
 
-<!-- 1 · PORTADA -->
+<!-- ══════════ PORTADA ══════════ -->
+
+<!-- 1 -->
 <section class="slide bg-negro active">
   <div class="logo">Flow<sup>R.</sup></div>
   <div class="kicker">Momentum Pinares <span class="dotv">·</span> Charla con Huli <span class="dotv">·</span> Agosto 2026</div>
   <h1>EL ALGORITMO<br><span class="tn">del</span> PACIENTE</h1>
-  <p class="sub">Cómo la inteligencia artificial ya decide a cuál especialista llega su próximo paciente. Y qué puede hacer usted al respecto.</p>
+  <p class="sub">Por qué su próximo paciente ya no lo va a encontrar como lo encontraban los anteriores.</p>
   <div class="firma">Roberto Echeverría Cárdenas · CEO, Flow Results</div>
 </section>
 
-<!-- 2 · GANCHO -->
+<!-- ══════════ ACTO 1 · EL CAMBIO ══════════ -->
+
+<!-- 2 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">La pregunta</div>
-  <h2>SU PRÓXIMO PACIENTE<br><span class="tn">ya no</span> BUSCA. PREGUNTA.</h2>
+  <div class="kicker">Esta charla responde dos preguntas</div>
+  <div class="pregunta">
+    <div class="qn">01</div>
+    <div class="qt">¿Cómo INVERTIR <span class="tn">en</span> MERCADEO <span class="tn">de manera</span> ESTRATÉGICA?</div>
+  </div>
+  <div class="pregunta">
+    <div class="qn">02</div>
+    <div class="qt">¿Cómo GENERAR <span class="tn">la</span> CONFIANZA <span class="tn">del</span> PACIENTE?</div>
+  </div>
+  <p class="punch">Las dos tienen hoy la misma respuesta. Y cambió hace muy poco.</p>
+</section>
+
+<!-- 3 -->
+<section class="slide bg-blanco">
+  <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">I · El cambio</div>
+  <div class="kicker">Así era hasta hace poco</div>
+  <h2>ANTES, EL PACIENTE CREÍA<br><span class="tn">lo que veía en</span> INTERNET</h2>
+  <p class="sub">Un buen sitio, buenas fotos, una promesa bien contada. Con estar presente alcanzaba para ganarse la visita.</p>
+</section>
+
+<!-- 4 -->
+<section class="slide bg-blanco">
+  <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">I · El cambio</div>
+  <div class="kicker">Hoy</div>
+  <h2>HOY ES ESCÉPTICO.<br>YA NO CREE: <span class="tn">le</span> PREGUNTA<br><span class="tn">a una</span> IA</h2>
   <div class="chat">
-    <span class="tag">Conversación real con una IA</span>
+    <span class="tag">Conversación real</span>
     <p class="q">"¿Quién es el mejor ortopedista de rodilla en San José?"<span class="cursor"></span></p>
   </div>
-  <p class="punch">La respuesta que recibe no tiene diez enlaces. Tiene nombres propios. O usted está en ella, o no existe.</p>
+  <p class="sub">Saturado de publicidad y desinformación, dejó de confiar en lo que ve. Ahora deja que un algoritmo filtre por él.</p>
 </section>
 
-<!-- 3 · PRE-RECOMENDADO -->
+<!-- 5 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">El cambio de fondo</div>
-  <h2>DE PRE-INFORMADO<br><span class="tn">a</span> PRE-RECOMENDADO</h2>
-  <div class="flecha">
-    <div class="box">
-      <h3>El paciente de Google</h3>
-      <p>Llegaba con diez enlaces y una lista de dudas. Comparaba, dudaba, preguntaba. La consulta empezaba en cero.</p>
-    </div>
-    <div class="ar">→</div>
-    <div class="box box-destacado">
-      <h3>El paciente de la IA</h3>
-      <p>Llega con una sola respuesta, redactada con seguridad, y muchas veces con nombres: esta clínica, este tratamiento, este especialista.</p>
-    </div>
-  </div>
-  <p class="punch">La conversación en su consultorio ya no empieza en cero. Empieza contra esa respuesta.</p>
+  <div class="acto">I · El cambio</div>
+  <h2>Y LA IA NO DA<br>DIEZ OPCIONES.<br>DA <span class="tn">un</span> NOMBRE.</h2>
+  <p class="punch">Una sola respuesta, redactada con seguridad. O usted está en ella, o no existe.</p>
 </section>
 
-<!-- 4 · SECCIÓN: GATEKEEPER -->
+<!-- 5b -->
+<section class="slide bg-blanco">
+  <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">I · El cambio</div>
+  <div class="kicker">Y aquí está la clave</div>
+  <h2>LA IA TAMPOCO CREE.<br>EXIGE <span class="tn">evidencia</span></h2>
+  <p class="sub">Reseñas verificables. Contenido riguroso con autor. Perfiles completos y consistentes. El algoritmo no premia al que mejor promete: premia al que mejor demuestra.</p>
+  <p class="punch">La confianza dejó de declararse. Ahora se demuestra, ante el paciente y ante el algoritmo.</p>
+</section>
+
+<!-- 6 -->
 <section class="slide bg-gradiente">
+  <div class="acto">I · El cambio</div>
   <h1>EL NUEVO GATEKEEPER<br><span class="tn">no tiene</span> BATA</h1>
-  <p class="sub" style="font-weight:400">Es un modelo de lenguaje. Resume, filtra y recomienda antes de que intervenga cualquier persona. Y ya lo está haciendo con hospitales, médicos y tratamientos, con o sin usted en la conversación.</p>
+  <p class="sub" style="font-weight:400">Un modelo de lenguaje resume, filtra y recomienda antes de que intervenga cualquier persona.</p>
 </section>
 
-<!-- 5 · EL CASO -->
+<!-- ══════════ ACTO 2 · EL PROBLEMA ══════════ -->
+
+<!-- 7 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">II · El problema</div>
   <div class="kicker">Un caso real, auditado en Costa Rica</div>
   <h2>EL MEJOR DEL PAÍS<br><span class="tn">que</span> NO EXISTE</h2>
-  <div class="cols">
-    <div class="col">
-      <h3>En la vida real</h3>
-      <ul>
-        <li>Especialista número uno del país en una técnica quirúrgica de alta complejidad.</li>
-        <li>Cientos de opiniones verificadas de pacientes en el expediente de su gremio.</li>
-        <li>Décadas de excelencia clínica comprobada.</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h3>Para el algoritmo</h3>
-      <ul>
-        <li>Cero reseñas en Google.</li>
-        <li>Sitio web caído.</li>
-        <li>Ausente de las respuestas de las IA. Para el algoritmo, el mejor del país no existe.</li>
-      </ul>
-    </div>
-  </div>
-  <p class="punch">La excelencia clínica y la visibilidad digital corren por carriles separados. Y hoy, el paciente entra por el segundo.</p>
+  <p class="sub">El número uno del país en su técnica quirúrgica: cientos de opiniones verificadas de pacientes, décadas de excelencia. En Google y en las IA: cero reseñas, sitio caído.</p>
+  <p class="punch">Para el algoritmo, el mejor del país no existe.</p>
 </section>
 
-<!-- 6 · LOS DATOS -->
+<!-- 8 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">II · El problema</div>
+  <h2>LA EXCELENCIA CLÍNICA<br><span class="tn">y la</span> VISIBILIDAD DIGITAL<br>CORREN <span class="tn">por</span> CARRILES SEPARADOS</h2>
+  <p class="sub">Ser el mejor ya no garantiza ser el encontrado. Y hoy el paciente entra por el carril digital.</p>
+</section>
+
+<!-- 9 -->
+<section class="slide bg-blanco">
+  <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">II · El problema</div>
   <div class="kicker">No es intuición: lo medimos todos los días</div>
-  <h2>LO QUE VIMOS <span class="tn">al</span> MAPEAR<br>EL PAÍS COMPLETO</h2>
-  <div class="stats">
-    <div class="stat"><div class="n">7,000+</div><div class="l">médicos mapeados en Costa Rica y México, con su presencia digital auditada</div></div>
-    <div class="stat"><div class="n">1,300+</div><div class="l">médicos de staff censados en tres hospitales privados de Costa Rica</div></div>
-    <div class="stat"><div class="n">55</div><div class="l">preguntas tipo paciente con las que medimos, mes a mes, a quién recomiendan las IA</div></div>
-    <div class="stat"><div class="n">0-100</div><div class="l">índice de visibilidad con el que calificamos a cada especialista y hospital</div></div>
+  <h2>LA MAYORÍA <span class="tn">de sus</span> COLEGAS<br>ES INVISIBLE <span class="tn">para la</span> IA</h2>
+  <div class="statline">
+    <div class="s"><div class="n">7,000+</div><div class="l">médicos mapeados en Costa Rica y México</div></div>
+    <div class="s"><div class="n">1,300+</div><div class="l">censados en tres hospitales privados de CR</div></div>
+    <div class="s"><div class="n">55</div><div class="l">preguntas tipo paciente medidas mes a mes</div></div>
   </div>
-  <p class="punch">El patrón es clarísimo: la gran mayoría de los especialistas certificados del país es prácticamente invisible en digital.</p>
 </section>
 
-<!-- 7 · HALLAZGO -->
+<!-- 10 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">El hallazgo que incomoda</div>
+  <div class="acto">II · El problema</div>
   <h2>LO QUE RECOMIENDA LA IA<br><span class="tn">no se parece al</span> MERCADO</h2>
-  <div class="col">
-    <ul>
-      <li>Hay líderes de mercado que no aparecen en ninguna respuesta.</li>
-      <li>Hay jugadores pequeños que dominan la conversación completa.</li>
-      <li>Cuando la IA solo puede ver a los pocos que publican, concentra toda la demanda en ellos.</li>
-    </ul>
-  </div>
-  <p class="punch">Para quien ya construyó visibilidad, es un premio desproporcionado. Para usted, hoy, es una ventana abierta: la mayoría de sus colegas todavía no está en la conversación.</p>
+  <p class="sub">Líderes de mercado que no aparecen en ninguna respuesta. Jugadores pequeños que dominan la conversación completa.</p>
 </section>
 
-<!-- 8 · SECCIÓN: VISIBILIDAD -->
-<section class="slide bg-gradiente">
-  <h1>LA VISIBILIDAD<br><span class="tn">es el nuevo</span> ACCESO</h1>
-  <p class="sub" style="font-weight:400">La brecha ya no es solo que el paciente llegue al especialista. Es que el especialista logre ser encontrado.</p>
-</section>
-
-<!-- 9 · QUÉ PREMIA -->
-<section class="slide bg-blanco compact">
-  <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">La buena noticia</div>
-  <h2>QUÉ PREMIA<br><span class="tn">el</span> ALGORITMO</h2>
-  <div class="lista-num">
-    <div class="item"><div class="num">01</div><div><h4>Contenido educativo con su nombre</h4><p>Respuestas rigurosas a las preguntas que sus pacientes ya están haciendo. Educación, no promoción.</p></div></div>
-    <div class="item"><div class="num">02</div><div><h4>Reseñas reales y consistentes</h4><p>Recientes, verificables y en los canales que las máquinas leen.</p></div></div>
-    <div class="item"><div class="num">03</div><div><h4>Perfil completo y verificable</h4><p>Su ficha en Huli, su sitio vivo, su perfil de Google: quién es usted, qué resuelve y dónde atiende.</p></div></div>
-    <div class="item"><div class="num">04</div><div><h4>Estructura legible para máquinas</h4><p>La IA solo recomienda lo que puede leer, citar y verificar.</p></div></div>
-  </div>
-  <p class="punch">La IA premia evidencia y rigor. Exactamente lo que usted sabe producir mejor que cualquier influencer.</p>
-</section>
-
-<!-- 10 · CAPITAL -->
+<!-- 11 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">El concepto</div>
+  <div class="acto">II · El problema</div>
+  <h2>LA IA CONCENTRA<br>TODA LA DEMANDA<br><span class="tn">en los</span> POCOS <span class="tn">que</span> VE</h2>
+  <p class="sub">Cada paciente que pregunta llega a los mismos nombres. Los visibles se llevan todo. Los demás no entran a la conversación.</p>
+</section>
+
+<!-- 12 -->
+<section class="slide bg-gradiente">
+  <div class="acto">II · El problema</div>
+  <h1>LA VISIBILIDAD<br><span class="tn">es el nuevo</span> ACCESO</h1>
+  <p class="sub" style="font-weight:400">La brecha ya no es que el paciente llegue al especialista. Es que el especialista logre ser encontrado.</p>
+</section>
+
+<!-- ══════════ ACTO 3 · LA INVERSIÓN ══════════ -->
+
+<!-- 13 -->
+<section class="slide bg-blanco">
+  <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">III · La inversión</div>
+  <h2>SU VISIBILIDAD<br>YA NO ES MARKETING.<br>ES <span class="tn">su</span> INFRAESTRUCTURA.</h2>
+  <p class="sub">Como su quirófano o su equipo de diagnóstico: no es un gasto opcional, es lo que sostiene la práctica que viene.</p>
+</section>
+
+<!-- 14 -->
+<section class="slide bg-blanco">
+  <div class="logo">Flow<sup>R.</sup></div>
+  <div class="acto">III · La inversión</div>
   <h2>CAPITAL<br><span class="tn">de</span> RECOMENDACIÓN</h2>
-  <p class="sub">Es el nuevo patrimonio del especialista: su presencia acumulada en las respuestas de las inteligencias artificiales. Cada artículo, cada reseña, cada respuesta pública sigue trabajando para usted años después de publicada.</p>
+  <p class="sub">Su presencia acumulada en las respuestas de las inteligencias artificiales. Cada artículo, cada reseña, cada perfil completo sigue trabajando para usted años después.</p>
   <p class="punch">Se acumula como el interés compuesto: lento al inicio, imparable después.</p>
 </section>
 
-<!-- 11 · EL SILENCIO -->
+<!-- 15 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">La dimensión humana</div>
-  <h2>LA DECISIÓN SE COCINA<br><span class="tn">en</span> SILENCIO</h2>
-  <p class="sub">La persona que considera una cirugía, o que acaba de recibir un diagnóstico, pasa semanas investigando sola, de noche, con miedo. Ese silencio es su momento de mayor incertidumbre y de menor acompañamiento.</p>
-  <p class="punch">Quien responde lo que da pena preguntar se gana la confianza antes de la primera consulta. Hoy, esa respuesta la está dando un algoritmo. Puede darla usted.</p>
+  <div class="acto">III · La inversión</div>
+  <div class="kicker">La buena noticia</div>
+  <h2>USTED YA TIENE<br><span class="tn">la</span> EVIDENCIA</h2>
+  <p class="sub">Años de formación, miles de casos, pacientes agradecidos. La materia prima que el algoritmo exige ya existe: solo falta ponerla donde las máquinas la puedan leer.</p>
+  <p class="punch">El influencer tiene que inventarla. Usted solo tiene que publicarla.</p>
 </section>
 
-<!-- 12 · LOS 3 MOVIMIENTOS -->
-<section class="slide bg-blanco compact">
+<!-- 16 -->
+<section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
-  <div class="kicker">Qué hacer, en orden</div>
-  <h2>TRES MOVIMIENTOS<br><span class="tn">para</span> ENTRAR <span class="tn">a la</span> CONVERSACIÓN</h2>
+  <div class="acto">III · La inversión</div>
+  <div class="kicker">Por dónde empezar</div>
+  <h2>TRES MOVIMIENTOS</h2>
   <div class="lista-num">
-    <div class="item"><div class="num">01</div><div><h4>Mida su punto de partida</h4><p>¿Qué responde la IA hoy cuando preguntan por su especialidad? Sin ese baseline, todo lo demás es opinión.</p></div></div>
-    <div class="item"><div class="num">02</div><div><h4>Publique evidencia, no campañas</h4><p>Educación estructurada, con su criterio y su nombre, publicada de forma que las máquinas la puedan leer, citar y recomendar.</p></div></div>
-    <div class="item"><div class="num">03</div><div><h4>Sostenga el sistema</h4><p>Presencia semanal, reseñas activas, perfil completo. La consistencia es lo que el algoritmo interpreta como confianza.</p></div></div>
+    <div class="item"><div class="num">01</div><div><h4>Mida su punto de partida</h4><p>¿Qué responde la IA hoy cuando preguntan por su especialidad?</p></div></div>
+    <div class="item"><div class="num">02</div><div><h4>Publique evidencia con su nombre</h4><p>Educación rigurosa que las máquinas puedan leer, citar y recomendar.</p></div></div>
+    <div class="item"><div class="num">03</div><div><h4>Sostenga el sistema</h4><p>Reseñas activas, perfil completo, presencia consistente. La constancia es confianza.</p></div></div>
   </div>
 </section>
 
-<!-- 13 · SECCIÓN: LA VENTANA -->
+<!-- 17 -->
 <section class="slide bg-gradiente">
+  <div class="acto">III · La inversión</div>
   <h1>LA CONFIANZA <span class="tn">de los</span><br>ALGORITMOS <span class="tn">se reparte</span><br>UNA SOLA VEZ</h1>
-  <p class="sub" style="font-weight:400">Los especialistas que construyan su autoridad digital hoy serán la recomendación de los próximos diez años. Los demás simplemente no aparecerán en la conversación.</p>
+  <p class="sub" style="font-weight:400">Los especialistas que inviertan hoy serán la recomendación de los próximos diez años.</p>
 </section>
 
-<!-- 14 · CIERRE -->
+<!-- 18 -->
 <section class="slide bg-negro">
   <div class="logo">Flow<sup>R.</sup></div>
   <h1>SEA<br><span class="tn">la</span> RESPUESTA</h1>
-  <p class="sub">La próxima vez que un paciente en Costa Rica le pregunte a una IA quién es el mejor en su especialidad, que la respuesta tenga su nombre.</p>
+  <p class="sub">Que la próxima vez que un paciente pregunte quién es el mejor en su especialidad, la respuesta tenga su nombre.</p>
 </section>
 
-<!-- 15 · CONTACTO -->
+<!-- 19 -->
 <section class="slide bg-blanco">
   <div class="logo">Flow<sup>R.</sup></div>
   <div class="kicker">El siguiente paso</div>
